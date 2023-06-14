@@ -1,0 +1,1 @@
+program identifier program_begin integer identifier = number , identifier = number , identifier ; if ( identifier relational_operator number ) begin display ( literal ) ; identifier = number ; end elseif ( identifier relational_operator number ) begin identifier = identifier * number ; display ( literal ) ; end program_end $ 

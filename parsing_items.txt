@@ -1,0 +1,43 @@
+'code → code
+code → program identifier program_begin statements program_end
+
+statements → statement
+statements → statement statements
+statement → if_stmt
+statement → while_stmt
+statement → for_stmt
+statement → assign_stmt
+statement → fcall_stmt
+statement → break_stmt
+if_stmt → if ( relational_expr ) block 
+if_stmt → if ( relational_expr ) block elseif ( relational_expr ) block else block
+if_stmt → if ( relational_expr ) block elseif ( relational_expr ) block
+while_stmt → while ( relational_expr ) block
+for_stmt → for ( id_init ; relational_expr ; unary_expr ) block
+id_init → type identifier assign_expr
+assign_stmt → id_init ;
+fcall_stmt → display ( literal ) ;
+break_stmt → break ;
+block → begin statements end
+
+unary_expr → identifier ++
+assign_expr → = expr declator
+assign_expr → declator
+relational_expr → identifier relational_operator expr
+expr → add_expr
+expr → mul_expr
+expr → identifier
+expr → number
+add_expr → expr + expr
+mul_expr → expr * expr
+declator → , identifier assign_expr
+declator → ε
+
+relational_operator → <
+relational_operator → >
+relational_operator → >=
+relational_operator → <=
+relational_operator → ==
+
+type → integer
+type → ε
