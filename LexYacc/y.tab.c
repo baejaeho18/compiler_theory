@@ -456,7 +456,7 @@ static const yytype_uint16 yytoknum[] =
   0
 
   /* YYPACT[STATE-NUM] -- Index in YYTABLE of the portion describing
-     STATE-NUM.  */
+     STATE-NUM.  */ 
 static const yytype_int8 yypact[] =
 {
       -5,     0,    -5,    -5,     1,    -5,     7,     7,    -4,    -4
